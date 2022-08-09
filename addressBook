@@ -7,6 +7,14 @@ class PersonalData:
         self.email = email
 
 annaLis = PersonalData("Anna", "Lis","Google","Data Analyst","anna_lis@gmail.com")
-print(annaLis)
 hannaLis = PersonalData("Hanna", "Lis","Google","Data Engineer","hanna_lis@gmail.com")
-print(hannaLis)
+joannaLis = PersonalData("Joanna", "Lis","Amazon","ETL Developer","joanna_lis@gmail.com")
+annaRis = PersonalData("Anna", "Ris","Google","Data Analyst","anna_lis@gmail.com")
+hannaRis = PersonalData("Hanna", "Ris","Google","Data Engineer","hanna_lis@gmail.com")
+joannaRis = PersonalData("Joanna", "Ris","Amazon","ETL Developer","joanna_lis@gmail.com")
+
+peopleInAddressBook = (annaLis, hannaLis, joannaLis, annaRis,hannaRis,joannaRis)
+
+for i in peopleInAddressBook:
+    print(i.firstName+" "+ i.lastName+" "+i.email)
+
