@@ -1,0 +1,66 @@
+Przykładowa struktura:
+
+Supervised Learning
+
+To rodzaj ML w którym 
+Podgrupa algorytmów ML, które można porównać do nauki w klasie, gdzie są uczniowie (nasz algorytm) oraz nauczyciel, który dostarcza wszystkich potrzebnych odpowiedzi.
+
+Tego typu algorytmy do działania potrzebują danych wejściowych (zmienne objaśniające – X) oraz odpowiadających im danych wynikowych, wartości, które chcemy uzyskać w wyniku działania algorytmu (zmienne objaśniane – y), zwanych dalej Labels, labelkami.
+
+Klasyfikacja
+
+Jest to ...
+
+klasyfikacja np. zdjęć, muzyki, zbiorów danych do pewnych określonych grup, 
+klasyfikacja e-mail (spam/nie spam), 
+detekcja nieprawidłowych przelewów, detekcja anomalii
+Regresja
+
+Jest to przewidywanie kolejnych elementów sekwencji, ciągu np. przewidywanie pogody,
+ trendów na giełdzie, zysków (wszystkie zadania
+ gdzie przewiduje się dalszą część wykresu, przewidujemy liczbę, 
+ nie kategorię, wynik jest dowolną wartością zmiennoprzecinkową). 
+ Być może jesteś spekulantem na rynku nieruchomości, 
+czyli szukasz niedoszacowanych mieszkań, które później chcesz sprzedać po cenie rynkowej.
+
+przykład 1 - W ekonomii na podstawie importu, eksportu i stopy bezrobocia można spróbować przewidywać PKB kraju.
+przykład 2 - Na podstawie ceny ropy można przewidywać cenę gazu.
+przykład 3 - Na podstawie danych z konta osobistego i raportu z Biura Informacji Kredytowej można przewidywać, czy kredytobiorca spłaci kredyt.
+Przy okazji wiesz, że możesz w BIK sprawdzić za darmo raz na pół roku, co widzą o Tobie banki?
+
+Unsupervised Learning
+
+To rodzaj ML w który można porównać do samodzielnej nauki, bez pomocy nauczyciela, bez kogoś, kto da nam wszystkie odpowiedzi lub oceni jakość rozwiązania.
+
+Algorytmy tego typu do działania potrzebują TYLKO danych wejściowych
+
+Clustering
+Klasteryzacja, grupowanie danych w podzbiory o podobnych cechach 
+
+Jest to ...
+
+grupowanie osób według koloru oczy,
+ długości włosów oraz ilości wybitych zębów. 
+ Podział aut wg rocznika, przebiegu,
+ stanu technicznego np. na grupy: "Super igły", "Starsza pani jeździła tylko do kościoła", 
+ "Szpachla", "Szpachla, szpachla i się trzyma". Brak tu jednak labelki, jak to ma miejsce w uczeniu nadzorowanym. 
+ Inne przykłady: pracujesz w dziale marketingu, chcesz podzielić odbiorców na grupy, aby lepiej kierować reklamy. 
+ Może byc uzywana w marketingu politycznym 
+ 
+Dimension Reduction
+
+ Bardzo często dane, które mamy, zawierają wiele kolumn
+ z różnymi cechami danego podzbioru np. kolor oczu, kolor włosów, 
+ długość kości w ręce, szerokość zębów itp. Im więcej takich cech dany zbiór posiada, 
+ tym trudniej jest wyszkolić model, potrzebna jest większa moc obliczeniowa itp.
+ Okazuje się, że usuwając część tych cech, można uzyskać o wiele lepsze wyniki. 
+ Temu właśnie służy technika Dimension Reduction. 
+ Jeśli masz wiele cech, to napotykasz na problem klątwy wielowymiarowości, 
+ czyli łatwiej przeuczyć model (więcej o tym dowiemy się później).
+ Z innej strony możesz mieć cechy, które niosą tę samą informację, 
+ na przykład temperatura oraz temperatura odczuwalna.
+
+Przyklady:
+Principal Component Analysis (PCA)
+Independent Component Analysis (ICA)
+Factor Analysis
